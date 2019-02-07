@@ -94,7 +94,7 @@ bot.on('message', function(message){
 
 bot.on('error', err => {
     console.log(err);
-})
+});
 
 // Bot login
-bot.login(token);
+bot.login(token).catch(console.log);
